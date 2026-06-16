@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/Melocet/glow-themes/schema-theme.json",
+  "title": "Glow community theme",
+  "description": "A shareable Glow profile theme (colors, frame, font). Data only, no code.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["name", "slug", "theme"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "name": { "type": "string", "minLength": 3, "maxLength": 40, "description": "Display name shown in the gallery." },
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$", "maxLength": 40, "description": "Unique URL id, lowercase-with-dashes. One file per slug." },
+    "description": { "type": "string", "maxLength": 200 },
+    "tags": { "type": "array", "maxItems": 6, "items": { "type": "string", "minLength": 1, "maxLength": 20 } },
+    "theme": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["accent", "accent2", "accent3", "bg"],
+      "properties": {
+        "accent":  { "type": "string", "pattern": "^#([0-9a-fA-F]{6}|[0-9a-fA-F]{3})$", "description": "Primary accent (hex)." },
+        "accent2": { "type": "string", "pattern": "^#([0-9a-fA-F]{6}|[0-9a-fA-F]{3})$", "description": "Secondary accent (hex)." },
+        "accent3": { "type": "string", "pattern": "^#([0-9a-fA-F]{6}|[0-9a-fA-F]{3})$", "description": "Tertiary accent for tri-color gradients (hex)." },
+        "bg":      { "type": "string", "pattern": "^#([0-9a-fA-F]{6}|[0-9a-fA-F]{3})$", "description": "Page base background (hex). Dark recommended." },
+        "glow":    { "type": "number", "minimum": 0, "maximum": 1.6, "description": "Glow intensity (0 is flat, 1.6 is intense)." },
+        "font":    { "type": "string", "enum": ["sans", "display", "mono"] },
+        "frame":   { "type": "string", "enum": ["none", "sparkles", "roses", "thorns", "blades", "hearts"], "description": "Decorative corner ornaments." }
+      }
+    }
+  }
+}

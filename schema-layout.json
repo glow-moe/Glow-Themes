@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/Melocet/glow-themes/schema-layout.json",
+  "title": "Glow community layout",
+  "description": "A shareable Glow profile layout: which base layout, and how the sections are arranged. Declarative data only, no code.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["name", "slug", "layout"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "name": { "type": "string", "minLength": 3, "maxLength": 40 },
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$", "maxLength": 40 },
+    "description": { "type": "string", "maxLength": 200 },
+    "tags": { "type": "array", "maxItems": 6, "items": { "type": "string", "minLength": 1, "maxLength": 20 } },
+    "layout": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["base"],
+      "properties": {
+        "base": {
+          "type": "string",
+          "enum": ["SIMPLE", "ADVANCED", "SHOWCASE", "LINKS"],
+          "description": "The built-in layout this builds on."
+        },
+        "sections": {
+          "type": "array",
+          "description": "Section order, visibility and detail. Unknown keys are ignored.",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["key"],
+            "properties": {
+              "key": {
+                "type": "string",
+                "enum": ["stats", "games", "steam", "psn", "retro", "anime", "music", "lol", "valorant", "minecraft", "genres", "discord"]
+              },
+              "visible": { "type": "boolean" },
+              "detailLevel": { "type": "string", "enum": ["compact", "detailed"] },
+              "order": { "type": "number" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "./schema-theme.json",
+  "name": "Example Theme",
+  "slug": "example-theme",
+  "description": "Copy this into themes/<your-slug>.json and make it yours. Colors only.",
+  "tags": ["example", "starter"],
+  "theme": {
+    "accent": "#19F2C0",
+    "accent2": "#3AA0FF",
+    "accent3": "#B96BFF",
+    "bg": "#04100E",
+    "glow": 1.1,
+    "font": "display",
+    "frame": "sparkles"
+  }
+}
