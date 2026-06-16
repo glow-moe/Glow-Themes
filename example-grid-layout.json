@@ -1,0 +1,22 @@
+{
+  "$schema": "./schema-layout.json",
+  "name": "Example Grid",
+  "slug": "example-grid",
+  "description": "A free-form 12-column grid. Copy this into layouts/<your-slug>.json and move the widgets around.",
+  "tags": ["example", "grid", "starter"],
+  "layout": {
+    "base": "GRID",
+    "grid": {
+      "gap": 4,
+      "widgets": [
+        { "widget": "header", "x": 0, "y": 0, "w": 12 },
+        { "widget": "stats",  "x": 0, "y": 1, "w": 4 },
+        { "widget": "games",  "x": 4, "y": 1, "w": 8, "detail": "detailed" },
+        { "widget": "anime",  "x": 0, "y": 2, "w": 8, "detail": "detailed" },
+        { "widget": "discord","x": 8, "y": 2, "w": 4 },
+        { "widget": "genres", "x": 0, "y": 3, "w": 6 },
+        { "widget": "links",  "x": 6, "y": 3, "w": 6 }
+      ]
+    }
+  }
+}
