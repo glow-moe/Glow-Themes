@@ -25,7 +25,7 @@ Copy [`../example-design.json`](../example-design.json) to start.
 
 ```jsonc
 {
-  "glow": "glow-design",   // required tag - marks the file as a Glow design
+  "glow": "glow-design",   // required tag, marks the file as a Glow design
   "version": 1,
   "profileType": "SHOWCASE",
   "layoutMode": "canvas",  // "canvas" = Sandbox, "grid" = the snapping board
@@ -46,8 +46,8 @@ part (see [`../schema-theme.json`](../schema-theme.json) for the color fields):
 - `font`: `sans`, `display`, or `mono`
 - `frame`: `none`, `sparkles`, `roses`, `thorns`, `blades`, or `hearts`
 - `background` (optional): `{ type, color | gradient | imageUrl | videoUrl,
-  dim, scrim, blur }` - `type` is `none`, `color`, `gradient`, `image`, or
-  `video`. `dim`/`scrim`/`blur` darken and soften it for readability.
+  dim, scrim, blur }`. `type` is `none`, `color`, `gradient`, `image`, or
+  `video`. `dim`, `scrim` and `blur` darken and soften it for readability.
 
 Some theme fields (custom cursor, audio, animated avatar ring, background
 effects) only show for **Glow+** owners. They stay in the file but do nothing
@@ -84,28 +84,48 @@ down on smaller screens, never up):
 - `width`: `full` or `half`
 - `height`: pixels
 
-One instance per widget type (the `type` is its id). A widget hides itself when
-its data isn't connected (for example `steam` with no Steam account).
+One widget of each type at most. Free **elements** (text, image, shape) can be
+added as many times as you like. A widget hides itself when its data isn't
+connected (for example `steam` with no Steam account).
+
+## Free elements (text, image, shape)
+
+Besides the data widgets you can drop in your own pieces. Each is a canvas item
+just like a widget, with its own `settings`:
+
+- **Text** (`"type": "text"`): `text`, `color`, `size` (10 to 160), `font`
+  (`display`, `sans`, `mono`, `serif`, `rounded`, `script`), `align`, `weight`,
+  `italic`, `lineHeight`, `letterSpacing`, `shadow`, `stroke` plus `strokeColor`.
+- **Image** (`"type": "image"`): `url` (your upload), `fit` (`cover` or
+  `contain`), `radius`, `opacity`.
+- **Shape** (`"type": "shape"`): `shape` (`rect`, `circle`, `line`), `color`,
+  `gradient` plus `color2`, `radius`, `opacity`.
+
+Any element can also carry a `link` (a URL or `/name`) to make it clickable on
+the public profile.
+
+In a hand-edited file give each element a unique type suffix, like
+`"type": "text:a1"`, so two text blocks do not collide.
+
+## Styling any item (box, rotation, animation)
+
+Every item, widget or element, can carry these in its `settings`:
+
+- `_rot`: rotation in degrees, from -180 to 180.
+- `_anim`: a looping animation, one of `float`, `pulse`, `fade`, `spin` (leave it
+  out for none). Turned off automatically for reduced-motion visitors.
+- `_box`: an optional panel behind the item,
+  `{ bg, bgOpacity, gradient, bg2, border, borderWidth, radius, blur, pad,
+  shadow, glow }`. `bg`, `bg2`, `border` and `glow` are hex colors, the rest are
+  numbers. `glow` adds a neon halo, `shadow` a soft drop shadow, `blur` a glass
+  backdrop.
 
 ## Widgets you can place
 
-| `type`         | What it is                                  |
-| -------------- | ------------------------------------------- |
-| `header`       | Profile header (avatar, name, links, badges)|
-| `stats`        | Combined stats summary                      |
-| `discord`      | Discord presence / now-playing              |
-| `links`        | Your links                                  |
-| `favorites`    | Favorite games (cover grid)                 |
-| `games`        | Full game library                           |
-| `characters`   | Favorite anime characters                   |
-| `anime`        | Anime list                                  |
-| `manga`        | Manga list                                  |
-| `steam`        | Steam games + achievements                  |
-| `psn`          | PlayStation games + trophies                |
-| `psn-trophies` | PSN trophy case (platinum/gold/silver/bronze)|
-| `retro`        | RetroAchievements                           |
-| `genres`       | Genre radar                                 |
-| `platforms`    | All platforms in one tabbed card            |
+The full list of widgets, what each one shows, and its limits (item counts,
+scrolling, what it needs connected) is in [`widgets.md`](widgets.md).
 
-A widget only renders when the owner has that source connected and has data, so
-it's safe to include any of them - unused ones just don't show.
+In short: `header`, `links`, `stats`, `genres`, `discord`, `favorites`, `games`,
+`steam`, `psn`, `psn-trophies`, `retro`, `characters`, `anime`, `manga`,
+`platforms`. A widget only renders when its data is connected, so any of them is
+safe to include. Unused ones stay hidden.
