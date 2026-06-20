@@ -5,9 +5,8 @@ plus every widget and exactly where you placed it on the Sandbox canvas. It's th
 file the Sandbox **Export** button gives you. Share it, back it up, or hand it to
 a friend so they can load your exact look.
 
-This is different from a [theme](../themes) (just colors) or a
-[layout](../layouts) (which sections show): a design is **theme + widget
-placement together**, the full picture.
+This is different from a [theme](../themes), which is just the colors: a design
+is the **theme plus your widget placement**, the full picture.
 
 ## Export and import (in Glow)
 

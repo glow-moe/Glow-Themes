@@ -1,7 +1,8 @@
 # Glow Community
 
-Community made themes and layouts for [Glow](https://glow.moe) profiles. It's all
-plain data, no code, so anyone can add one with a pull request.
+Community made themes for [Glow](https://glow.moe) profiles, plus the Sandbox
+design format. It's all plain data, no code, so anyone can add one with a pull
+request.
 
 This repo only holds the contribution files. None of the Glow app code lives here.
 
@@ -9,19 +10,15 @@ This repo only holds the contribution files. None of the Glow app code lives her
 
 ```
 example-theme.json     copy this to make a theme
-example-layout.json    copy this to make a layout
 example-design.json    a full design exported from the Sandbox
 themes/                community themes go here  (your-slug.json)
-layouts/               community layouts go here (your-slug.json)
 designs/               how Sandbox export / import works + the widget list
 schema-theme.json      validates theme files
-schema-layout.json     validates layout files
 ```
 
 ## How to add one
 
-1. Copy `example-theme.json` into `themes/your-slug.json`, or `example-layout.json`
-   into `layouts/your-slug.json`.
+1. Copy `example-theme.json` into `themes/your-slug.json`.
 2. Edit the fields. Keep the `$schema` line so your editor checks it while you type.
 3. Open a pull request. A maintainer looks it over, and once it's merged it gets
    added to Glow.
@@ -39,17 +36,6 @@ A theme is just colors, a glow level, a font, and an optional corner frame.
 - `theme.glow`: 0 is flat, 1.6 is intense, default is 1
 - `theme.font`: `sans`, `display`, or `mono`
 - `theme.frame`: `none`, `sparkles`, `roses`, `thorns`, `blades`, or `hearts`
-
-## Layout fields
-
-A layout picks a base layout and arranges the sections.
-
-- `name`, `slug`, `description`, `tags`: same rules as themes (name and slug required)
-- `layout.base` (required): `SIMPLE`, `ADVANCED`, `SHOWCASE`, or `LINKS`
-- `layout.sections`: a list, each with `key`, `visible`, `detailLevel`
-  (`compact` or `detailed`), and `order`
-- section `key` can be: `stats`, `games`, `steam`, `psn`, `retro`, `anime`,
-  `music`, `lol`, `valorant`, `minecraft`, `genres`, `discord`
 
 ## Designs (Sandbox export / import)
 
