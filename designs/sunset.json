@@ -1,0 +1,105 @@
+{
+  "glow": "glow-design",
+  "version": 1,
+  "profileType": "SHOWCASE",
+  "layoutMode": "canvas",
+  "minimal": false,
+  "theme": {
+    "accent": "#FF2E97",
+    "accent2": "#2DE2E6",
+    "accent3": "#FFB627",
+    "bg": "#0B0220",
+    "glow": 1.55,
+    "font": "display",
+    "frame": "sparkles",
+    "background": {
+      "type": "gradient",
+      "gradient": "linear-gradient(180deg, #2B0A45 0%, #4A0E52 42%, #120226 100%)",
+      "dim": 0.45,
+      "scrim": 0.32,
+      "blur": 8
+    }
+  },
+  "canvasLayout": {
+    "desktop": [
+      { "type": "shape:sun", "x": 560, "y": 0, "w": 480, "h": 480, "z": 0,
+        "settings": { "shape": "circle", "color": "#FF2E97", "gradient": true, "color2": "#FFB627", "radius": 999, "opacity": 0.22, "_anim": "pulse" } },
+      { "type": "shape:bokeh1", "x": 1240, "y": 470, "w": 280, "h": 280, "z": 0,
+        "settings": { "shape": "circle", "color": "#2DE2E6", "gradient": true, "color2": "#FF2E97", "radius": 999, "opacity": 0.12, "_anim": "float" } },
+      { "type": "shape:bokeh2", "x": 60, "y": 2520, "w": 360, "h": 360, "z": 0,
+        "settings": { "shape": "circle", "color": "#FF2E97", "gradient": true, "color2": "#FFB627", "radius": 999, "opacity": 0.11, "_anim": "float" } },
+      { "type": "shape:band", "x": 0, "y": 300, "w": 1600, "h": 130, "z": 0,
+        "settings": { "shape": "rect", "color": "#FF2E97", "gradient": true, "color2": "#2DE2E6", "radius": 0, "opacity": 0.09, "_rot": -5, "_anim": "fade" } },
+
+      { "type": "header", "x": 0, "y": 0, "w": 1600, "h": 360, "z": 3, "settings": {} },
+
+      { "type": "text:badge", "x": 1330, "y": 296, "w": 270, "h": 70, "z": 5,
+        "settings": { "text": "✦ ONLINE", "color": "#2DE2E6", "size": 22, "font": "mono", "align": "right", "weight": "bold", "letterSpacing": 3, "shadow": true, "_rot": -8, "_anim": "float" } },
+
+      { "type": "text:tA", "x": 0, "y": 392, "w": 1000, "h": 80, "z": 5,
+        "settings": { "text": "❍ FAVORITES", "color": "#FF2E97", "size": 46, "font": "display", "align": "left", "weight": "bold", "letterSpacing": 2, "shadow": true, "_rot": -2 } },
+      { "type": "shape:lineA", "x": 0, "y": 480, "w": 760, "h": 64, "z": 4,
+        "settings": { "shape": "line", "color": "#2DE2E6", "opacity": 0.85, "_anim": "fade" } },
+      { "type": "favorites", "x": 0, "y": 520, "w": 780, "h": 440, "z": 2,
+        "settings": { "_box": { "bg": "#140428", "bgOpacity": 0.55, "gradient": true, "bg2": "#1E0636", "border": "#FF2E97", "borderWidth": 1, "radius": 22, "blur": 8, "pad": 18, "shadow": true, "glow": "#FF2E97" } } },
+      { "type": "characters", "x": 820, "y": 520, "w": 780, "h": 440, "z": 2,
+        "settings": { "_box": { "bg": "#140428", "bgOpacity": 0.55, "gradient": true, "bg2": "#1E0636", "border": "#2DE2E6", "borderWidth": 1, "radius": 22, "blur": 8, "pad": 18, "shadow": true, "glow": "#2DE2E6" } } },
+
+      { "type": "text:tB", "x": 0, "y": 1010, "w": 1000, "h": 80, "z": 5,
+        "settings": { "text": "◐ NOW PLAYING", "color": "#FFB627", "size": 46, "font": "display", "align": "left", "weight": "bold", "letterSpacing": 2, "shadow": true, "_rot": 1 } },
+      { "type": "shape:lineB", "x": 0, "y": 1098, "w": 760, "h": 64, "z": 4,
+        "settings": { "shape": "line", "color": "#FFB627", "opacity": 0.85, "_anim": "fade" } },
+      { "type": "discord", "x": 0, "y": 1138, "w": 780, "h": 300, "z": 2,
+        "settings": { "_box": { "bg": "#140428", "bgOpacity": 0.55, "border": "#2DE2E6", "borderWidth": 1, "radius": 22, "blur": 8, "pad": 16, "shadow": true, "glow": "#2DE2E6" } } },
+      { "type": "stats", "x": 820, "y": 1138, "w": 780, "h": 300, "z": 2,
+        "settings": { "_box": { "bg": "#140428", "bgOpacity": 0.55, "border": "#FF2E97", "borderWidth": 1, "radius": 22, "blur": 8, "pad": 16, "shadow": true, "glow": "#FF2E97" } } },
+
+      { "type": "text:tC", "x": 0, "y": 1488, "w": 1000, "h": 80, "z": 5,
+        "settings": { "text": "▦ LIBRARY", "color": "#2DE2E6", "size": 46, "font": "display", "align": "left", "weight": "bold", "letterSpacing": 2, "shadow": true, "_rot": -1 } },
+      { "type": "shape:lineC", "x": 0, "y": 1576, "w": 760, "h": 64, "z": 4,
+        "settings": { "shape": "line", "color": "#FF2E97", "opacity": 0.85, "_anim": "fade" } },
+      { "type": "genres", "x": 0, "y": 1616, "w": 520, "h": 440, "z": 2,
+        "settings": { "_box": { "bg": "#140428", "bgOpacity": 0.55, "border": "#FFB627", "borderWidth": 1, "radius": 22, "blur": 8, "pad": 16, "shadow": true, "glow": "#FFB627" } } },
+      { "type": "games", "x": 560, "y": 1616, "w": 1040, "h": 440, "z": 2,
+        "settings": { "detail": "detailed", "_box": { "bg": "#140428", "bgOpacity": 0.55, "border": "#2DE2E6", "borderWidth": 1, "radius": 22, "blur": 8, "pad": 18, "shadow": true, "glow": "#2DE2E6" } } },
+
+      { "type": "text:tD", "x": 0, "y": 2106, "w": 1000, "h": 80, "z": 5,
+        "settings": { "text": "♛ TROPHIES", "color": "#FFB627", "size": 46, "font": "display", "align": "left", "weight": "bold", "letterSpacing": 2, "shadow": true, "_rot": 2 } },
+      { "type": "shape:lineD", "x": 0, "y": 2194, "w": 760, "h": 64, "z": 4,
+        "settings": { "shape": "line", "color": "#FF2E97", "opacity": 0.85, "_anim": "fade" } },
+      { "type": "psn-trophies", "x": 0, "y": 2234, "w": 780, "h": 320, "z": 2,
+        "settings": { "_box": { "bg": "#140428", "bgOpacity": 0.55, "border": "#FFB627", "borderWidth": 1, "radius": 22, "blur": 8, "pad": 16, "shadow": true, "glow": "#FFB627" } } },
+      { "type": "steam", "x": 820, "y": 2234, "w": 780, "h": 320, "z": 2,
+        "settings": { "_box": { "bg": "#140428", "bgOpacity": 0.55, "border": "#2DE2E6", "borderWidth": 1, "radius": 22, "blur": 8, "pad": 16, "shadow": true, "glow": "#2DE2E6" } } },
+
+      { "type": "platforms", "x": 0, "y": 2620, "w": 1600, "h": 380, "z": 2,
+        "settings": { "_box": { "bg": "#140428", "bgOpacity": 0.5, "gradient": true, "bg2": "#1E0636", "border": "#FF2E97", "borderWidth": 1, "radius": 22, "blur": 8, "pad": 18, "shadow": true, "glow": "#FF2E97" } } },
+
+      { "type": "text:tF", "x": 0, "y": 3050, "w": 1600, "h": 80, "z": 5,
+        "settings": { "text": "↘ FIND ME", "color": "#2DE2E6", "size": 40, "font": "display", "align": "center", "weight": "bold", "letterSpacing": 3, "shadow": true } },
+      { "type": "links", "x": 540, "y": 3140, "w": 520, "h": 360, "z": 2,
+        "settings": { "_box": { "bg": "#140428", "bgOpacity": 0.55, "border": "#FFB627", "borderWidth": 1, "radius": 22, "blur": 8, "pad": 16, "shadow": true, "glow": "#FFB627" } } },
+      { "type": "text:footer", "x": 0, "y": 3530, "w": 1600, "h": 64, "z": 5,
+        "settings": { "text": "\u2726 glow.moe \u2726", "color": "#FF2E97", "size": 20, "font": "script", "align": "center", "italic": true, "letterSpacing": 2, "shadow": true, "_anim": "float" } }
+    ],
+    "mobile": [
+      { "type": "header", "order": 0, "width": "full", "height": 360 },
+      { "type": "text:tA", "order": 1, "width": "full", "height": 72 },
+      { "type": "favorites", "order": 2, "width": "full", "height": 420 },
+      { "type": "characters", "order": 3, "width": "full", "height": 420 },
+      { "type": "text:tB", "order": 4, "width": "full", "height": 72 },
+      { "type": "discord", "order": 5, "width": "full", "height": 260 },
+      { "type": "stats", "order": 6, "width": "full", "height": 240 },
+      { "type": "text:tC", "order": 7, "width": "full", "height": 72 },
+      { "type": "genres", "order": 8, "width": "full", "height": 360 },
+      { "type": "games", "order": 9, "width": "full", "height": 440 },
+      { "type": "text:tD", "order": 10, "width": "full", "height": 72 },
+      { "type": "psn-trophies", "order": 11, "width": "full", "height": 280 },
+      { "type": "steam", "order": 12, "width": "full", "height": 360 },
+      { "type": "platforms", "order": 13, "width": "full", "height": 360 },
+      { "type": "text:tF", "order": 14, "width": "full", "height": 72 },
+      { "type": "links", "order": 15, "width": "full", "height": 320 },
+      { "type": "text:footer", "order": 16, "width": "full", "height": 64 }
+    ]
+  }
+}
