@@ -1,0 +1,89 @@
+{
+  "glow": "glow-design",
+  "version": 1,
+  "profileType": "SHOWCASE",
+  "layoutMode": "canvas",
+  "minimal": false,
+  "theme": {
+    "accent": "#FF4D8D",
+    "accent2": "#7DF9FF",
+    "accent3": "#A98BFF",
+    "bg": "#08060F",
+    "glow": 1.4,
+    "font": "display",
+    "frame": "roses",
+    "background": {
+      "type": "gradient",
+      "gradient": "linear-gradient(160deg, #0C0820 0%, #150826 50%, #05030C 100%)",
+      "dim": 0.5,
+      "scrim": 0.35,
+      "blur": 8
+    }
+  },
+  "canvasLayout": {
+    "desktop": [
+      { "type": "shape:heroGlow", "x": 540, "y": 20, "w": 520, "h": 520, "z": 0,
+        "settings": { "shape": "circle", "color": "#FF4D8D", "gradient": true, "color2": "#A98BFF", "radius": 999, "opacity": 0.18, "_anim": "pulse" } },
+      { "type": "shape:glowA", "x": 1060, "y": 720, "w": 480, "h": 480, "z": 0,
+        "settings": { "shape": "circle", "color": "#7DF9FF", "gradient": true, "color2": "#A98BFF", "radius": 999, "opacity": 0.14, "_anim": "pulse" } },
+      { "type": "shape:glowB", "x": 0, "y": 1620, "w": 560, "h": 560, "z": 0,
+        "settings": { "shape": "circle", "color": "#A98BFF", "gradient": true, "color2": "#FF4D8D", "radius": 999, "opacity": 0.13, "_anim": "pulse" } },
+
+      { "type": "header", "x": 0, "y": 0, "w": 1600, "h": 360, "z": 2, "settings": {} },
+
+      { "type": "text:d1", "x": 0, "y": 392, "w": 600, "h": 64, "z": 4,
+        "settings": { "text": "✦  FAVORITES", "color": "#7DF9FF", "size": 28, "font": "mono", "align": "left", "weight": "bold", "italic": false, "lineHeight": 1.2, "letterSpacing": 4, "shadow": true, "_anim": "fade" } },
+      { "type": "favorites", "x": 0, "y": 460, "w": 780, "h": 440, "z": 1,
+        "settings": { "_box": { "bg": "#0E0A1A", "bgOpacity": 0.55, "gradient": true, "bg2": "#170A28", "border": "#FF4D8D", "borderWidth": 1, "radius": 20, "blur": 8, "pad": 18, "shadow": true, "glow": "#FF4D8D" } } },
+      { "type": "characters", "x": 820, "y": 460, "w": 780, "h": 440, "z": 1,
+        "settings": { "_box": { "bg": "#0E0A1A", "bgOpacity": 0.55, "gradient": true, "bg2": "#170A28", "border": "#A98BFF", "borderWidth": 1, "radius": 20, "blur": 8, "pad": 18, "shadow": true, "glow": "#A98BFF" } } },
+
+      { "type": "text:d2", "x": 0, "y": 930, "w": 600, "h": 64, "z": 4,
+        "settings": { "text": "◈  NOW PLAYING", "color": "#FF4D8D", "size": 28, "font": "mono", "align": "left", "weight": "bold", "letterSpacing": 4, "shadow": true, "_anim": "fade" } },
+      { "type": "discord", "x": 0, "y": 998, "w": 780, "h": 280, "z": 1,
+        "settings": { "_box": { "bg": "#0E0A1A", "bgOpacity": 0.55, "border": "#7DF9FF", "borderWidth": 1, "radius": 20, "blur": 8, "pad": 16, "shadow": true, "glow": "#7DF9FF" } } },
+      { "type": "stats", "x": 820, "y": 998, "w": 780, "h": 280, "z": 1,
+        "settings": { "_box": { "bg": "#0E0A1A", "bgOpacity": 0.55, "border": "#FF4D8D", "borderWidth": 1, "radius": 20, "blur": 8, "pad": 16, "shadow": true, "glow": "#FF4D8D" } } },
+
+      { "type": "text:d3", "x": 0, "y": 1308, "w": 600, "h": 64, "z": 4,
+        "settings": { "text": "▣  LIBRARY", "color": "#A98BFF", "size": 28, "font": "mono", "align": "left", "weight": "bold", "letterSpacing": 4, "shadow": true, "_anim": "fade" } },
+      { "type": "genres", "x": 0, "y": 1376, "w": 520, "h": 440, "z": 1,
+        "settings": { "_box": { "bg": "#0E0A1A", "bgOpacity": 0.55, "border": "#A98BFF", "borderWidth": 1, "radius": 20, "blur": 8, "pad": 16, "shadow": true, "glow": "#A98BFF" } } },
+      { "type": "games", "x": 560, "y": 1376, "w": 1040, "h": 440, "z": 1,
+        "settings": { "detail": "detailed", "_box": { "bg": "#0E0A1A", "bgOpacity": 0.55, "border": "#7DF9FF", "borderWidth": 1, "radius": 20, "blur": 8, "pad": 18, "shadow": true, "glow": "#7DF9FF" } } },
+
+      { "type": "text:d4", "x": 0, "y": 1846, "w": 600, "h": 64, "z": 4,
+        "settings": { "text": "♛  TROPHIES", "color": "#FFD166", "size": 28, "font": "mono", "align": "left", "weight": "bold", "letterSpacing": 4, "shadow": true, "_anim": "fade" } },
+      { "type": "psn-trophies", "x": 0, "y": 1914, "w": 780, "h": 300, "z": 1,
+        "settings": { "_box": { "bg": "#0E0A1A", "bgOpacity": 0.55, "border": "#FFD166", "borderWidth": 1, "radius": 20, "blur": 8, "pad": 16, "shadow": true, "glow": "#FFD166" } } },
+      { "type": "steam", "x": 820, "y": 1914, "w": 780, "h": 300, "z": 1,
+        "settings": { "_box": { "bg": "#0E0A1A", "bgOpacity": 0.55, "border": "#7DF9FF", "borderWidth": 1, "radius": 20, "blur": 8, "pad": 16, "shadow": true, "glow": "#7DF9FF" } } },
+
+      { "type": "platforms", "x": 0, "y": 2254, "w": 1600, "h": 380, "z": 1,
+        "settings": { "_box": { "bg": "#0E0A1A", "bgOpacity": 0.5, "gradient": true, "bg2": "#170A28", "border": "#FF4D8D", "borderWidth": 1, "radius": 20, "blur": 8, "pad": 18, "shadow": true, "glow": "#FF4D8D" } } },
+
+      { "type": "links", "x": 540, "y": 2700, "w": 520, "h": 360, "z": 1,
+        "settings": { "_box": { "bg": "#0E0A1A", "bgOpacity": 0.55, "border": "#A98BFF", "borderWidth": 1, "radius": 20, "blur": 8, "pad": 16, "shadow": true, "glow": "#A98BFF" } } },
+      { "type": "text:footer", "x": 0, "y": 3090, "w": 1600, "h": 64, "z": 4,
+        "settings": { "text": "made with \u2661 on glow", "color": "#A98BFF", "size": 18, "font": "script", "align": "center", "italic": true, "letterSpacing": 1, "shadow": true, "_anim": "float" } }
+    ],
+    "mobile": [
+      { "type": "header", "order": 0, "width": "full", "height": 360 },
+      { "type": "text:d1", "order": 1, "width": "full", "height": 64 },
+      { "type": "favorites", "order": 2, "width": "full", "height": 420 },
+      { "type": "characters", "order": 3, "width": "full", "height": 420 },
+      { "type": "text:d2", "order": 4, "width": "full", "height": 64 },
+      { "type": "discord", "order": 5, "width": "full", "height": 240 },
+      { "type": "stats", "order": 6, "width": "full", "height": 240 },
+      { "type": "text:d3", "order": 7, "width": "full", "height": 64 },
+      { "type": "genres", "order": 8, "width": "full", "height": 360 },
+      { "type": "games", "order": 9, "width": "full", "height": 440 },
+      { "type": "text:d4", "order": 10, "width": "full", "height": 64 },
+      { "type": "psn-trophies", "order": 11, "width": "full", "height": 280 },
+      { "type": "steam", "order": 12, "width": "full", "height": 360 },
+      { "type": "platforms", "order": 13, "width": "full", "height": 360 },
+      { "type": "links", "order": 14, "width": "full", "height": 320 },
+      { "type": "text:footer", "order": 15, "width": "full", "height": 64 }
+    ]
+  }
+}

@@ -21,7 +21,9 @@ inject anything unsafe. Bad values are clamped or dropped, never trusted as-is.
 
 ## File shape
 
-Copy [`../example-design.json`](../example-design.json) to start.
+Copy [`../example-design.json`](../example-design.json) for a minimal start, or
+[`sakura.json`](sakura.json) for a fuller ready-made design (a sakura theme with
+glowing shapes, sectioned widgets and neon boxes) you can drop in and tweak.
 
 ```jsonc
 {
