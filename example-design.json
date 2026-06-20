@@ -1,0 +1,37 @@
+{
+  "glow": "glow-design",
+  "version": 1,
+  "profileType": "SHOWCASE",
+  "layoutMode": "canvas",
+  "minimal": false,
+  "theme": {
+    "accent": "#ff2d9b",
+    "accent2": "#7c5cff",
+    "accent3": "#23d5ab",
+    "bg": "#06060e",
+    "glow": 1.2,
+    "font": "display",
+    "frame": "sparkles",
+    "background": {
+      "type": "gradient",
+      "gradient": "linear-gradient(160deg,#1a0b2e,#06060e)",
+      "dim": 0.35,
+      "scrim": 0.5,
+      "blur": 0
+    }
+  },
+  "canvasLayout": {
+    "desktop": [
+      { "type": "header", "x": 0, "y": 0, "w": 1000, "h": 320, "z": 1, "settings": {} },
+      { "type": "stats", "x": 0, "y": 344, "w": 488, "h": 240, "z": 1, "settings": {} },
+      { "type": "psn-trophies", "x": 512, "y": 344, "w": 488, "h": 240, "z": 1, "settings": {} },
+      { "type": "anime", "x": 0, "y": 608, "w": 1000, "h": 360, "z": 1, "settings": { "detail": "detailed" } }
+    ],
+    "mobile": [
+      { "type": "header", "order": 0, "width": "full", "height": 320 },
+      { "type": "stats", "order": 1, "width": "full", "height": 240 },
+      { "type": "psn-trophies", "order": 2, "width": "full", "height": 240 },
+      { "type": "anime", "order": 3, "width": "full", "height": 360 }
+    ]
+  }
+}

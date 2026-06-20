@@ -10,8 +10,10 @@ This repo only holds the contribution files. None of the Glow app code lives her
 ```
 example-theme.json     copy this to make a theme
 example-layout.json    copy this to make a layout
+example-design.json    a full design exported from the Sandbox
 themes/                community themes go here  (your-slug.json)
 layouts/               community layouts go here (your-slug.json)
+designs/               how Sandbox export / import works + the widget list
 schema-theme.json      validates theme files
 schema-layout.json     validates layout files
 ```
@@ -48,5 +50,16 @@ A layout picks a base layout and arranges the sections.
   (`compact` or `detailed`), and `order`
 - section `key` can be: `stats`, `games`, `steam`, `psn`, `retro`, `anime`,
   `music`, `lol`, `valorant`, `minecraft`, `genres`, `discord`
+
+## Designs (Sandbox export / import)
+
+A design is your **whole profile in one file** - the colors and background plus
+every widget and exactly where you placed it on the Sandbox canvas. It's what the
+Sandbox **Export** button gives you, and **Import** loads back. Use it to back up
+or share your exact look.
+
+See [`designs/README.md`](designs/README.md) for how export / import works, the
+file shape, and the full list of widgets you can place. Start from
+[`example-design.json`](example-design.json).
 
 Thanks for making Glow prettier.
