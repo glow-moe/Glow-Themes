@@ -96,6 +96,17 @@ Each one is referenced by its `type` (the string you use in a `glow-design.json`
 - Needs: PSN connected with trophies earned.
 - Size: small. The detailed grid wants room for four columns.
 
+### `xbox`
+
+- Your Xbox profile: gamertag, gamerscore and gamerpic, a grid of recent games
+  with their completion, and a Recent or Rarest list of unlocked achievements.
+  Tap any game or achievement for its full name, description and details.
+- Limits: up to 6 recent games and 12 achievements. Compact mode is just the
+  gamertag and score; detailed mode adds the stats row, games and achievements.
+  Rarity shows when Xbox provides it, otherwise it sorts by gamerscore.
+- Needs: Xbox connected.
+- Size: a medium card; detailed mode wants more height for the achievement list.
+
 ### `retro` (RetroAchievements)
 
 - Your RetroAchievements name and points. Detailed mode adds recent achievements
@@ -103,6 +114,15 @@ Each one is referenced by its `type` (the string you use in a `glow-design.json`
 - Limits: up to 10 recent achievements and up to 6 completed games.
 - Needs: RetroAchievements connected.
 - Size: flexible, taller in detailed mode.
+
+### `minecraft`
+
+- Your Minecraft (Java) skin in a rotating 3D viewer, with your cape if you have
+  one. Drag it to spin; it slowly auto-rotates on its own.
+- Limits: just the skin and cape. Auto-rotation turns off for reduced-motion
+  visitors, and it falls back to a static render where 3D isn't available.
+- Needs: a Minecraft Java username set in Connections.
+- Size: a small, tall box suits the standing character.
 
 ## Anime
 
@@ -129,12 +149,24 @@ Each one is referenced by its `type` (the string you use in a `glow-design.json`
 - Needs: MyAnimeList or AniList with manga.
 - Size: 3 to 4 column grid.
 
+## Film
+
+### `letterboxd`
+
+- A poster grid of the films you have logged on Letterboxd, with your star
+  ratings on each poster.
+- Limits: shows your collection, newest first. You can reorder, hide, or search
+  your films; hidden ones drop to the bottom and visitors never see them. Posters
+  fall back to the film title when the art is missing.
+- Needs: a Letterboxd username set in Connections.
+- Size: a 3 to 4 column poster grid, the same size as anime.
+
 ## Everything in one
 
 ### `platforms` (tabbed)
 
-- A single tabbed card with Steam, PlayStation, RetroAchievements, Anime and Manga
-  tabs. Each tab holds that platform's full view.
+- A single tabbed card with Steam, PlayStation, Xbox, RetroAchievements, Anime and
+  Manga tabs. Each tab holds that platform's full view.
 - Limits: a tab only appears when its data exists. One tab shows at a time, and the
   Steam and PSN tabs page their lists internally.
 - Needs: at least one connection.

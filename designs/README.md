@@ -129,6 +129,6 @@ The full list of widgets, what each one shows, and its limits (item counts,
 scrolling, what it needs connected) is in [`widgets.md`](widgets.md).
 
 In short: `header`, `links`, `stats`, `genres`, `discord`, `favorites`, `games`,
-`steam`, `psn`, `psn-trophies`, `retro`, `characters`, `anime`, `manga`,
-`platforms`. A widget only renders when its data is connected, so any of them is
-safe to include. Unused ones stay hidden.
+`steam`, `psn`, `psn-trophies`, `xbox`, `retro`, `minecraft`, `characters`,
+`anime`, `manga`, `letterboxd`, `platforms`. A widget only renders when its data
+is connected, so any of them is safe to include. Unused ones stay hidden.
