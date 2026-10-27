@@ -1,3 +1,7 @@
+> **This repo is retired.** Glow doesn't use community themes or the design files from here anymore, so nothing in this repo works in the app now. It's archived and kept public for reference only, so it takes no new pull requests or issues.
+>
+> Want to make your profile your own? Head to the Design editor at [glow.moe/dashboard/design](https://glow.moe/dashboard/design).
+
 # Glow Community
 
 Community made themes for [Glow](https://glow.moe) profiles, plus the Sandbox
